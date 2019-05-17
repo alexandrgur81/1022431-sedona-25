@@ -54,12 +54,30 @@
       <p class="sentence-best">Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшее предложение гостиниц в Седоне</p>
     </section>
-
-    <section class="modal modal-map">
-      <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-      <!-- Здесь будет форма -->
+    <section class="appointment">
+      <h2 class="appointment-search">Поиск гостиницы в Седоне</h2>
+      <form class="appointment-form" action="#" method="post">
+        <label class="appointment-item">
+          Дата заезда:
+          <input type="text" name="arrival date" placeholder="24 апреля 2017">
+        </label>
+        <label class="appointment-item">
+          Дата выезда:
+          <input type="text" name="date of departure" placeholder="4 июля 2017">
+        </label>
+        <label class="appointment-item">
+          Взрослые:
+          <input type="text" name="adults" placeholder="2">
+        </label>
+        <label class="appointment-item">
+          Дети:
+          <input type="text" name="children" placeholder="0">
+        </label>
+        <p class="appointment-form-button">
+          <button class="button" type="submit">Найти</button>
+        </p>
+      </form>
     </section>
-
   </main>
   <footer>
     <p class="hashtag">
