@@ -23,30 +23,36 @@ a {
   list-style: none;
 }
 
-.site-navigation a:hover,
-.footer-copyright a:hover,
-.catalog-item-title a:hover {
+a:hover,
+a:hover,
+a:hover {
   color: #81b3d2;
 }
 
-.site-navigation a:focus,
-.footer-copyright a:focus,
-.catalog-item-title a:focus {
+a:focus,
+a:focus,
+a:focus {
   color: #b2b2b2;
 }
 
-.site-navigation a:active,
-.footer-copyright a:active,
-.catalog-item-title a:active {
+a:active,
+a:active,
+a:active {
   color: #88786d;
 }
 
+.welcom-text {
+  background-image: url("../img/svg-sedona/intro-welcome.svg");
+  width: 459px;
+  height: 353px;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 .content-img {
-   background-image:
-    url("../img/svg-sedona/intro-welcome.svg"),
-    url("../img/canyon.jpg");
-   width: 1000px;
-   height: 780px;
+   background-image: url("../img/canyon.jpg");
+   width: 1200px;
+   height: 800px;
+   background-position: top center;
    background-repeat: no-repeat;
 
 }
@@ -59,5 +65,5 @@ h2 {
 
 .visually-hidden {
 
-  
+
 }
