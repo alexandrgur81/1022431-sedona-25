@@ -4,7 +4,7 @@ body {
 
    font-family: "PT Sans", Arial, sans-serif;
    font-size: 14px;
-   line-height: 26px;
+   line-height: 21px;
    font-weight: 400;
    color: #000000;
    text-transform: uppercase;
@@ -52,6 +52,7 @@ a:active {
    background-image: url("../img/canyon.jpg");
    width: 1200px;
    height: 800px;
+   background-color: #ffffff;
    background-position: top center;
    background-repeat: no-repeat;
 
@@ -64,6 +65,125 @@ h2 {
 }
 
 .visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
+.appointment-item{
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
 
+.appointment-search-btn {
+  font-family: "PT Sans";
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 582px;
+  height: 85px;
+
+  background-color: #766357;
+  text-transform: uppercase;
+}
+
+.appointment-search-btn:hover{
+  background-color: #766357;
+}
+
+.appointment-search-btn:focus{
+  background-color: #604e43;
+}
+
+.appointment-search-btn:active {
+  background-color: #503e33;
+
+}
+
+.appointment-form-btn {
+  font-family: "PT Sans";
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 460px;
+  height: 60px;
+  padding: 5px 10px;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+}
+
+.appointment-form-btn:hover{
+
+  background-color: #81b3d2;
+}
+
+.appointment-form-btn:focus{
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.appointment-form-btn:active {
+  background-color: #5496bd;
+}
+
+.buttons-button-detail {
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 111px;
+  height: 28px;
+  padding: 5px 10px;
+  background-color: #81b3d2;
+  text-transform: uppercase;
+}
+
+.buttons-button-detail:hover{
+
+  background-color: #81b3d2;
+}
+
+.buttons-button-detail:focus{
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.buttons-button-detail:active {
+  background-color: #5496bd;
+}
+
+.buttons-button-reservation {
+  font-family: "PT Sans";
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  color: #ffffff;
+  width: 145px;
+  height: 30px;
+  padding: 5px 10px;
+  background-color: #766357;
+  text-transform: uppercase;
+}
+
+.buttons-button-reservation:hover{
+
+  background-color: #766357;
+}
+
+.buttons-button-reservation:focus{
+  color: #857871;
+  background-color: #604e43;
+}
+
+.buttons-button-reservation:active {
+  color: 857871;
+  background-color: #503e33;
 }
