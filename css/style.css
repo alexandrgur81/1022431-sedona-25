@@ -50,7 +50,7 @@ a:active {
 .content-img {
    background-image: url("../img/canyon.jpg");
    width: 1200px;
-   height: 800px;
+   height: 773px;
    background-color: #ffffff;
    background-position: top center;
    background-repeat: no-repeat;
@@ -195,6 +195,31 @@ h2 {
   line-height: 26px;
   font-weight: 700;
   color: #000000;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.social-button  {
+  width: 50px;
+  height: 50px;
+  padding: 15px 15px;
+  margin-bottom: 0px;
+  background-color: #81b3d2;
+  list-style: none;
+}
+
+.social-button:hover {
+  background-color: #81b3d2;
+}
+
+.social-button:focus {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
 }
 
 .footer-logo {
