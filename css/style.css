@@ -16,6 +16,15 @@ a {
   color: #000000;
 }
 
+svg {
+  fill: currentColor;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .site-navigation,
 .footer-logo {
   list-style: none;
@@ -60,7 +69,6 @@ a:active {
   color: #3333333;
 }
 
-
 h2 {
   font-size: 21px;
   line-height: 26px;
@@ -101,10 +109,7 @@ h2 {
   border: none;
 }
 
-.appointment-search-btn:hover {
-  background-color: #766357;
-}
-
+.appointment-search-btn:hover,
 .appointment-search-btn:focus {
   background-color: #604e43;
 }
@@ -128,7 +133,7 @@ h2 {
 }
 
 .appointment-form-btn:hover {
-  background-color: #81b3d2;
+  background-color: #669ec0;
 }
 
 .appointment-form-btn:focus {
@@ -197,29 +202,39 @@ h2 {
   color: #000000;
 }
 
-svg {
-  fill: currentColor;
-}
-
 .social-button  {
   width: 50px;
   height: 50px;
   padding: 15px 15px;
-  margin-bottom: 0px;
+  margin-right: 7px;
+  margin-left: 7px;
   background-color: #81b3d2;
+}
+
+.face {
+  padding: 14px 18px;
+}
+
+.social-btn-svg {
+  color: #ffffff;
+}
+
+.social-btn-svg:active {
+  color: #88b6d1;
+}
+
+.footer-social-list {
   list-style: none;
 }
 
-.social-button:hover {
-  background-color: #81b3d2;
-}
-
-.social-button:focus {
-  background-color: #669ec0;
+.social-button:hover,
+.social-button:focus{
+  background-color: ##669ec0;
 }
 
 .social-button:active {
   background-color: #5496bd;
+  color: #88b6d1;
 }
 
 .footer-logo {
@@ -232,4 +247,113 @@ svg {
 
 .footer-logo:active {
   color: #bdbbbc;
+}
+
+/*временно для сетки*/
+
+body > * {
+  background-color: rgba(255,0,0,0.3);
+}
+body > * > * {
+  background-color: rgba(255, 255, 0,0.3);
+}
+
+html,
+body {
+  width: 1280px;
+  min-height: 2762px;
+}
+
+body {
+  background-color: #f2f2f2;
+  background-size: 1200px auto;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+
+.main-header {
+  width: 1280px;
+  background-color: #ffffff;
+  min-height: 57px;
+}
+
+.main-navigation {
+  display: flex;
+  background-color: transparent;
+
+}
+
+.main-navigation-wrapper {
+  width: 100%;
+ display: flex;
+ flex-direction: column;
+}
+
+.main-header-logo {
+  width: 140px;
+  height: 72px;
+  /*display: block;*/
+  margin: auto;
+  justify-content: center;
+}
+.site-navigation {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main-footer {
+  width: 1280px;
+  height: 120px;
+  background-color: #fdfdfd;
+
+}
+
+.main-footer-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.hashtag {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  min-height: 120px;
+  margin-top: 0;
+  margin-left: 73px;
+  margin-right: 88px;
+}
+
+.footer-social {
+  display: flex;
+  width: 400px;
+  height: 120px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 120px;
+  margin-top: 0;
+  margin-right: 73px;
+  margin-right: 88px;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
 }
