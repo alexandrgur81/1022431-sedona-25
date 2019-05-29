@@ -25,6 +25,9 @@ img {
   height: auto;
 }
 
+ul {
+  padding: 0;
+}
 .site-navigation,
 .footer-logo {
   list-style: none;
@@ -58,15 +61,16 @@ a:active {
 
 .content-img {
    background-image: url("../img/canyon.jpg");
-   width: 1200px;
-   height: 773px;
+   width: 100%;
+   height: 510px;
    background-color: #ffffff;
    background-position: top center;
    background-repeat: no-repeat;
+   background-size: cover;
 }
 
 .features-subtitle {
-  color: #3333333;
+  color: #333333;
 }
 
 h2 {
@@ -222,7 +226,7 @@ h2 {
 
 .social-button:hover,
 .social-button:focus{
-  background-color: ##669ec0;
+  background-color: #669ec0;
 }
 
 .social-button:active {
@@ -242,19 +246,10 @@ h2 {
   color: #bdbbbc;
 }
 
-/*временно для сетки*/
-
-body > * {
-  background-color: rgba(255,0,0,0.3);
-}
-body > * > * {
-  background-color: rgba(255, 255, 0,0.3);
-}
 
 html,
 body {
   width: 1280px;
-  min-height: 2762px;
 }
 
 body {
@@ -284,29 +279,47 @@ body {
   width: 140px;
   height: 72px;
   position: absolute;
-  left: 640px;
-  top: 10px;
+  top: 0;
 }
 
 .site-navigation {
   width: 100%;
   margin: 0;
+  padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-around;
 }
 
-.main-footer {
-  width: 1280px;
-  height: 120px;
-  background-color: #fdfdfd;
-
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
+.content-img {
+  position: relative;
+  height: 510px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcom-text {
+  position: absolute;
+  left: 50%;
+  margin-left: -228px;
+}
+
+
 .main-footer {
+  width: 100%;
+  height: 120px;
+  background-color: #fdfdfd;
   display: flex;
   padding-left: 173px;
-
+  padding-right: 138px;
+  box-sizing: border-box;
 }
 
 .hashtag {
@@ -318,9 +331,15 @@ body {
   margin: 0;
 }
 
+.footer-social {
+  display: flex;
+  flex: 1;
+    justify-content: center;
+}
+
 .footer-social-list {
   display: flex;
-  width: 635px;
+  flex: grow;
   justify-content: center;
   align-items: center;
   padding-left: 5px;
@@ -333,8 +352,8 @@ body {
   height: 48px;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
 }
-
 
 .footer-copyright {
   display: flex;
