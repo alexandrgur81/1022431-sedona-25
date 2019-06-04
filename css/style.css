@@ -113,10 +113,10 @@ a:active {
    background-repeat: no-repeat;
    background-size: cover;
    position: relative;
-   height: 510px;
    display: flex;
    justify-content: center;
    align-items: center;
+   margin-bottom: 60px;
 }
 
 .features-subtitle {
@@ -144,8 +144,110 @@ h2 {
 
 .features {
   width: 100%;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
   text-align: center;
+}
+
+.reason-item {
+  width: 100%;
+  min-height: 255px;
+  display: flex;
+  margin-top: 50px;
+}
+
+.reason-item-block {
+  width: 400px;
+  padding-top: 45px;
+  padding-bottom: 60px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #81b3d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-city {
+  flex: 1;
+}
+.reason-item-title {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 21px;
+
+}
+
+.reason-item-number,
+.reason-item-description {
+  color: #e9f1f7;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.reason-item-description {
+  color: #c2d9e8;
+}
+
+.offer {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.offer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  padding-left: 70px;
+  padding-right: 35px;
+  background-color: #ffffff;
+}
+
+.offer-item-title {
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.offer-item-description {
+  font-size: 14px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.img-rocks {
+  flex: 1;
+}
+
+.reason-line {
+  width: 100%;
+  min-height: 255px;
+  background-color: #eeeeee;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.reason-line-item {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+  padding-bottom: 60px;
+  align-items: center;
+}
+
+.reason-line-title {
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
 }
 
 .sentence {
@@ -157,8 +259,12 @@ h2 {
 .sentence-title {
   font-size: 30px;
   line-height: 36px;
+  margin-bottom: 30px;
 }
 
+.sentence-best {
+  margin-bottom: 50px;
+}
 .appointment {
   display: flex;
   flex-direction: column;
@@ -284,7 +390,19 @@ h2 {
   color: #857871;
   background-color: #503e33;
 }
-
+.map-img {
+   background-image: url("../img/map.jpg");
+   width: 100%;
+   height: 470px;
+   background-color: #ffffff;
+   background-position: top center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
 .catalog-list {
   padding: 0;
   margin: 0;
