@@ -10,6 +10,9 @@ body {
    text-transform: uppercase;
    background-color: #f2f2f2;
    background-size: 1200px auto;
+   margin-left: 40px;
+   margin-right: 40px;
+
 }
 
 a {
@@ -82,8 +85,19 @@ a:active {
   padding: 0;
   list-style: none;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
+
+.site-navigation li:last-child {
+  margin-right: 72px;
+}
+
+.site-navigation li:first-child {
+  margin-left: 72px;
+}
+
+
+
 
 .container {
   display: flex;
@@ -166,6 +180,7 @@ padding: 0;
   width: 100%;
   min-height: 255px;
   display: flex;
+  order:-2;
 }
 
 .reason-item-block {
@@ -208,7 +223,7 @@ padding: 0;
   min-height: 330px;
   background-color: #ffffff;
   list-style: none;
-
+  order: -2;
 }
 .offer {
   width: 1280px;
@@ -218,7 +233,6 @@ padding: 0;
   align-items: center;
   flex-direction: row;
   position: absolute;
-
   margin-top: -875px;
   margin-left: 0;
 }
@@ -270,6 +284,7 @@ padding: 0;
   width: 100%;
   margin: 0 auto;
   text-align: center;
+  background-color: #ffffff;
 }
 
 .sentence-title {
@@ -279,7 +294,7 @@ padding: 0;
 }
 
 .sentence-best {
-  margin-bottom: 50px;
+  margin-bottom: 140px;
 }
 .appointment {
   display: flex;
@@ -287,63 +302,149 @@ padding: 0;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  top: 2087px;
+  left: 400px;
+
 }
 
 .appointment-form {
-  width: 580px;
-  min-height: 400px;
+
+  width: 568px;
   background-color: #ffffff;
   font-size: 14px;
-  font-weight: 700px;
+  align-items: center;
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  padding-top: 55px;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: left;
   z-index: 1;
+  display: none;
+
 }
 
 .appointment-item {
+  width: 100%;
   font-size: 14px;
   font-weight: 700;
-
+  margin: 0 0 30px;
   text-transform: uppercase;
-  padding-left: 55px;
-  padding-right: 65px;
-  padding-top: 50px;
-  padding-right: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.appointment-item-title {
+  width: 112px;
+}
+
+.arrival-calendar {
+  flex-grow: 1;
+}
+.open-calendar {
+  width: 21px;
+  height: 22px;
+  position: absolute;
+  right: 9px;
+  top: 50%;
+  margin-top: -11px;
+  outline: none;
+  border: 0;
+  padding: 0;
+}
+
+.calendar-svg-img {
+  color: #cacaca;
+  outline: none;
+}
+
+.calendar-svg-img:focus {
+  color: #000000;
+}
+
+.calendar-svg-img:active {
+  color: #81b3d2;
 }
 
 .arrival-date {
-  width: 346px;
-  height: 38px;
+  width: 100%;
   background-color: #f2f2f2;
-  margin-left: 25px;
+  box-sizing: border-box;
+  padding: 4px 38px 4px 11px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+  border: 2px solid transparent;
+  position: relative;
 }
+
 .appointment-item-adults {
   width: 50%;
-  padding-left: 55px;
   font-size: 14px;
   font-weight: 700;
-
+  margin-bottom: 54px;
 }
 
 .appointment-item-children {
+  width: 50%;
   font-size: 14px;
   font-weight: 700;
-
-
+  margin-bottom: 54px;
+  text-align: end;
 }
 .number-field {
-  width: 38px;
-  height: 38px;
-  margin-top: 35px;
+  width: 40px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 4px 4px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
   text-align: center;
+  border: 0;
+  outline: none;
 }
+
+.less-number,
+.more-number {
+  width: 40;
+  height: 40;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  border: 0;
+  margin: 0;
+  padding: 4px 12px;
+  outline: none;
+  color: #a9a9a9;
+  background-color: #f2f2f2;
+}
+
+.less-number:focus,
+.more-number:focus {
+   color: #000000;
+}
+
+.less-number:active,
+.more-number:active{
+   color: #81b3d2;
+}
+
 .arrival-date:hover {
   background-color: #ebebeb;
 }
 
 .arrival-date:focus {
   background-color: #ffffff;
+  outline: none;
+  border-color: #e5e5e5;
 }
 .less-number,
 .more-number {
@@ -363,13 +464,14 @@ padding: 0;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
-  width: 580px;
+  width: 568px;
   height: 85px;
   background-color: #766357;
   text-transform: uppercase;
   border: none;
   padding: 0;
   align-items: center;
+  outline: none;
 }
 
 .appointment-search-btn:hover,
@@ -387,10 +489,8 @@ padding: 0;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
-  width: 460px;
-  height: 60px;
-  padding: 5px 10px;
-  margin-bottom: 55px;
+  width: 100%;
+  padding: 16px;
   background-color: #81b3d2;
   text-transform: uppercase;
   border: none;
