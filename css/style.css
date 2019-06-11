@@ -1,5 +1,4 @@
 body {
-   width: 1280px;
    margin: 0 auto;
    padding: 0;
    font-family: "PT Sans", Arial, sans-serif;
@@ -9,10 +8,14 @@ body {
    color: #000000;
    text-transform: uppercase;
    background-color: #f2f2f2;
-   background-size: 1200px auto;
    margin-left: 40px;
    margin-right: 40px;
+}
 
+.wrap {
+  width: 1200px;
+  box-shadow: 2px 0 0 0 rgba(219, 219, 219, 0.2),
+   -2px 0 0 0 rgba(219, 219, 219, 0.2);
 }
 
 a {
@@ -57,8 +60,7 @@ a:active {
 }
 
 .main-header {
-  width: 1280px;
-  min-height: 56px;
+  width: 100%;
   background-color: #ffffff;
 }
 
@@ -66,34 +68,41 @@ a:active {
   width: 100%;
   display: flex;
   background-color: transparent;
-  padding-top: 20px;
   flex-direction: column;
-  align-items: center;
+  position: relative;
 }
 
 .main-header-logo {
   width: 140px;
   height: 72px;
   position: absolute;
+  left: 50%;
+  margin-left: -70px;
   top: 0;
   z-index: 1;
 }
 
 .site-navigation {
-  width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 15px 72px;
   list-style: none;
   display: flex;
-  justify-content: space-between;
-}
-
-.site-navigation li:last-child {
-  margin-right: 72px;
 }
 
 .site-navigation li:first-child {
-  margin-left: 72px;
+  width: 240px;
+}
+
+.site-navigation li:nth-child(2) {
+  width: 488px;
+}
+
+.site-navigation li:nth-child(3) {
+  width: 252px;
+}
+
+.site-navigation li:last-child {
+  flex: 1;
 }
 
 
@@ -176,13 +185,15 @@ margin: 0;
 padding: 0;
 }
 
-.reason-item {
+.reason-item-1,
+.reason-item-2 {
   width: 100%;
   min-height: 255px;
   display: flex;
-  order:-2;
 }
-
+.reason-item-1 {
+  order: -2;
+}
 .reason-item-block {
   width: 400px;
   padding-top: 45px;
@@ -226,14 +237,13 @@ padding: 0;
   order: -2;
 }
 .offer {
-  width: 1280px;
+  width: 1200px;
   padding: 0;
   margin: 0;
   display: flex;
   align-items: center;
   flex-direction: row;
   position: absolute;
-  margin-top: -875px;
   margin-left: 0;
 }
 
@@ -285,6 +295,7 @@ padding: 0;
   margin: 0 auto;
   text-align: center;
   background-color: #ffffff;
+  position: relative;
 }
 
 .sentence-title {
@@ -303,9 +314,9 @@ padding: 0;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 2087px;
-  left: 400px;
-
+  left: 50%;
+  margin-left: -284px;
+  top: 188px;
 }
 
 .appointment-form {
@@ -323,8 +334,6 @@ padding: 0;
   padding-right: 60px;
   text-align: left;
   z-index: 1;
-  display: none;
-
 }
 
 .appointment-item {
@@ -414,8 +423,8 @@ padding: 0;
 
 .less-number,
 .more-number {
-  width: 40;
-  height: 40;
+  width: 40px;
+  height: 40px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -516,7 +525,7 @@ padding: 0;
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
-  width: 111px;
+  width: 112px;
   height: 28px;
   padding: 5px 10px;
   background-color: #81b3d2;
@@ -526,9 +535,9 @@ padding: 0;
 
 .button-reservation {
   width: 145px;
-  height: 30px;
   padding: 5px 10px;
   background-color: #766357;
+  margin-left: 10px;
 }
 
 .button-detail:hover {
@@ -586,7 +595,6 @@ padding: 0;
    background-size: cover;
    display: flex;
    flex-direction: row;
-   margin-bottom: 30px;
    list-style: none;
 }
 
@@ -763,45 +771,62 @@ padding: 0;
 
 
 .catalog-list {
+  width: 100%;
   padding: 0;
   margin: 0;
 }
 
 .catalog-item {
-  width: 100%;
-  height: 150px;
   display: flex;
-  align-items: center;
-  padding-left: 115px;
-  padding-right: 115px;
+  padding: 30px 72px;
   margin: 0;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+  background-color: #fefefe;
 }
 
 .catalog-item-img {
   width: 135px;
-  height: 90px;
+}
+
+.img-catalog {
+  width: 100%;
+  height: 100%;
+}
+.catalog-item-title {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.catalog-item-price-category {
+  margin: 0;
+  margin-bottom: 15px;
   display: flex;
-  padding-right: 30px;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  align-items: center;
+}
+.price-category-hotel {
+  width: 115px;
 }
 
 .catalog-item-description {
+  width: 780px;
   display: flex;
-  padding-right: 537px;
   flex-direction: column;
-  justify-content: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  align-content: center;
+  padding-left: 30px;
 }
 
 .rating {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: flex-end;
-  padding-right: 70px;
+}
+
+.rating-grades {
+  width: 100%;
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 5px 0;
 }
 
 .main-footer {
