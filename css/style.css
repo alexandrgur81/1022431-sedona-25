@@ -394,24 +394,40 @@ padding: 0;
 }
 
 .appointment-item-adults {
-  width: 50%;
+  width: 230px;
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 54px;
+  display: flex;
+  box-sizing: border-box;
+  align-items: center
 }
 
 .appointment-item-children {
-  width: 50%;
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 54px;
-  text-align: end;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
 }
+
+
+.number-person-adults {
+  display: flex;
+  margin-left: 40px;
+}
+
+.number-person-children {
+  margin-left: 30px;
+  display: flex;
+}
+
 .number-field {
   width: 40px;
   background-color: #f2f2f2;
   box-sizing: border-box;
-  padding: 4px 4px;
   font-size: 14px;
   line-height: 26px;
   font-weight: 700;
@@ -460,13 +476,6 @@ padding: 0;
     border: none;
 }
 
-.number-person-adults {
-  margin-left: 40px;
-}
-
-.number-person-children {
-  margin-left: 35px;
-}
 .appointment-search-btn {
   font-family: "PT Sans";
   font-size: 21px;
