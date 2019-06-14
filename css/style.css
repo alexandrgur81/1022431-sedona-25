@@ -261,7 +261,6 @@ a {
   padding: 0;
   margin: 0;
   display: flex;
-  align-items: center;
   flex-direction: row;
   position: absolute;
   margin-left: 0;
@@ -320,11 +319,16 @@ a {
 .sentence-title {
   font-size: 30px;
   line-height: 36px;
+  margin-top: 50px;
   margin-bottom: 30px;
 }
 
 .sentence-best {
-  margin-bottom: 140px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  margin: 0;
+  margin-bottom: 135px;
 }
 
 .appointment {
@@ -336,7 +340,7 @@ a {
   position: absolute;
   left: 50%;
   margin-left: -284px;
-  top: 184px;
+  top: 215px;
 }
 
 .appointment-form {
@@ -601,17 +605,11 @@ a {
 
 .map-img {
   background-image: url("../img/map.jpg");
-  height: 470px;
-  background-color: #ffffff;
-  background-position: top center;
   background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 72px;
-  box-sizing: border-box;
+  width: 100%;
+  height: 596px;
+  margin-bottom: -122px;
+
 }
 
 .base-choice {
@@ -941,9 +939,9 @@ a {
 }
 
 .main-footer {
+  background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
   height: 120px;
-  background-color: #fdfdfd;
   display: flex;
   padding-left: 173px;
   padding-right: 138px;
