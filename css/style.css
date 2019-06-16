@@ -945,6 +945,7 @@ a {
   padding-left: 173px;
   padding-right: 138px;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .hashtag {
