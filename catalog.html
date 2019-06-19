@@ -27,10 +27,10 @@
         </svg>
       </a>
       <ul class="site-navigation">
-        <li><a class="site-navigation-list" href="#">Информация</a></li>
+        <li><a class="site-navigation-list" href="index.html">Информация</a></li>
         <li><a class="site-navigation-list" href="#">Фото и видео</a></li>
         <li><a class="site-navigation-list" href="#">Карта штата</a></li>
-        <li><a class="site-navigation-list" href="#">Гостиницы</a></li>
+        <li class="active"><a class="site-navigation-list">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -41,18 +41,24 @@
       <h2 class="infrastructure-title">Инфраструктура:</h2>
       <ul class="infrastructure-option">
         <li class="infrastructure-option-item">
-          <label>
-            <input class="infrastructure-option-pool" type="checkbox" name="pool">Бассейн
+          <label class="check-option">
+            <input class="check-input" type="checkbox" name="pool" checked>
+            <span class="check-box-img"></span>
+            Бассейн
           </label>
         </li>
         <li class="infrastructure-option-item">
-          <label>
-            <input class="infrastructure-option-parking" type="checkbox" name="parking">Парковка
+          <label class="check-option">
+            <input class="check-input" type="checkbox" name="parking">
+            <span class="check-box-img"></span>
+            Парковка
           </label>
         </li>
         <li class="infrastructure-option-item">
-          <label>
-            <input class="infrastructure-option-wi-fi" type="checkbox" name="wi-fi">Wi-fi
+          <label class="check-option">
+            <input class="check-input" type="checkbox" name="wi-fi">
+            <span class="check-box-img"></span>
+            Wi-fi
           </label>
         </li>
       </ul>
@@ -61,18 +67,24 @@
       <h2 class="housing-title">Тип жилья:</h2>
       <ul class="housing-option">
         <li class="housing-option-item">
-          <label>
-            <input class="housing-option-hotel" type="checkbox" name="hotel">Гостиница
+          <label class="check-option">
+            <input class="check-input" type="checkbox" name="hotel" checked>
+            <span class="check-box-img"></span>
+            Гостиница
           </label>
         </li>
         <li class="housing-option-item">
-          <label>
-            <input class="housing-option-motel" type="checkbox" name="motel">Мотель
+          <label class="check-option">
+            <input class="check-input" type="checkbox" name="motel" checked>
+            <span class="check-box-img"></span>
+            Мотель
           </label>
         </li>
         <li class="housing-option-item">
-          <label>
-            <input class="housing-option-apartment" type="checkbox" name="apartment">Апартаменты
+          <label class="check-option">
+            <input class="check-input" type="checkbox" name="apartment" checked>
+            <span class="check-box-img"></span>
+            Апартаменты
           </label>
         </li>
       </ul>
@@ -108,7 +120,16 @@
           <a class="sorting-choice-rating" href="#">По рейтингу</a>
         </li>
       </ul>
+      <div class="sorting-for-number">
+        <a class="sorting-btn-down" href="#" aria-label="Сортировка по убыванию">
+          <svg class="img-btn-down" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg>
+        </a>
+        <a class="sorting-btn-up" href="#" aria-label="Сортировка по возрастанию">
+          <svg class="img-btn-up" xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg>
+        </a>
+      </div>
     </section>
+
     <section class="catalog">
       <ul class="catalog-list">
         <li class="catalog-item">
