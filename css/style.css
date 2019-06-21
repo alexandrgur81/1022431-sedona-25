@@ -98,8 +98,6 @@ a {
   display: flex;
 }
 
-
-
 .site-navigation li:first-child {
   width: 240px;
 }
@@ -191,7 +189,6 @@ a {
 .features-title {
   margin-top: 60px;
   margin-bottom: 30px;
-
 }
 
 .container-reasons {
@@ -227,7 +224,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .img-city {
@@ -392,6 +388,7 @@ a {
 .appointment-item-title {
   width: 112px;
 }
+
 .arrival-date {
   width: 100%;
   border: 0;
@@ -417,24 +414,22 @@ a {
   right: 9px;
   top: 50%;
   margin-top: -11px;
-  outline: none;
   border: 0;
   padding: 0;
 }
 
 .calendar-svg-img {
   color: #cacaca;
-  outline: none;
 }
 
 .calendar-svg-img:hover {
   color: #000000;
 }
 
-
 .calendar-svg-img:active {
   color: #81b3d2;
 }
+
 .container-departure {
   width: 100%;
   margin: 0 0 30px;
@@ -449,7 +444,6 @@ a {
   box-sizing: border-box;
   align-items: center
 }
-
 
 .container-children {
   width: 50%;
@@ -479,7 +473,6 @@ a {
   text-transform: uppercase;
   text-align: center;
   border: 0;
-  outline: none;
 }
 
 .less-number,
@@ -491,9 +484,19 @@ a {
   font-weight: 700;
   border: 0;
   margin: 0;
-  padding: 4px 12px;
+  padding: 4px 10px;
   color: #a9a9a9;
   background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.number-field:hover {
+  background-color: #ebebeb;
+}
+
+.number-field:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
 }
 
 .less-number:hover,
@@ -512,8 +515,7 @@ a {
 
 .arrival-date:focus {
   background-color: #ffffff;
-  outline: none;
-  border-color: #e5e5e5;
+  border: 2px solid #e5e5e5;
 }
 
 .appointment-search-btn {
@@ -529,7 +531,6 @@ a {
   border: none;
   padding: 0;
   align-items: center;
-  outline: none;
 }
 
 .appointment-search-btn:hover,
@@ -623,7 +624,6 @@ a {
   width: 100%;
   height: 596px;
   margin-bottom: -122px;
-
 }
 
 .base-choice {
@@ -652,13 +652,6 @@ a {
   padding-left: 39px;
 }
 
-.check-input {
-  position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
-
 .check-box-img {
   position: absolute;
   margin-left: -40px;
@@ -666,29 +659,24 @@ a {
   height: 23px;
   background-repeat: no-repeat;
   background-image:
-  url(../img/svg-sedona/checkbox-off.svg);
+    url(../img/svg-sedona/checkbox-off.svg);
 }
 
-.check-input:checked + .check-box-img {
+.check-input:checked+.check-box-img {
   background-image: url(../img/svg-sedona/checkbox-on.svg);
 }
 
-.check-input:focus + .check-box-img {
-  background-image: url(../img/svg-sedona/checkbox-off.svg);
+.check-input:focus+.check-box-img {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
-.check-input:checked:focus + .check-box-img {
-  background-image: url(../img/svg-sedona/checkbox-on.svg);
+.check-input:disabled+.check-box-img {
+  background-image: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAj0lEQVRIie3VsQnDMBCF4d9GhchOHiEeIKVLgabJDh4gZIMs5FJVEh6cTHDrS3cPhHTNh1ChN5RSLsAduAGZ82nACtRk8OKA9uTuJbuxMgMvB3wCHnLTz1MI3hzwp+15dMCO+fT5H/iewAMPPPDAj3izsxpkcDCvtjfhKlNF1fS2z/7MkqOsqrlqg2/7Q/0CKw4k+v1R/YQAAAAASUVORK5CYII=);
 }
 
-.check-input:disabled + .check-box-img {
-  background-image: url(../img/svg-sedona/checkbox-off-disabled.svg);
+.check-input:checked:disabled+.check-box-img {
+  background-image: url(data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAXCAYAAAD6FjQuAAABQ0lEQVRIia3WP0oEMRTH8e8uW4hgua14AEtLLfyDVnoA7aw04AFsvcKC9gtrLSKWNoIn8AS2NmqjWKg8fE9imGQyk/xgyAwzeR/ekDAzcM7NAxNgH5ijPO/AFvAQVhoqdFgJkpwpNAZOgYHdGGlHkj3gvhD6Bl4VugOWgUXAyb2R15FAL4UYASQ50tENKxRPQZZVYKEmFoMegQ3grRbWBj2jqzEW2RI7taAUJtANcAsc1IDQpR+D1vV6quOsBIp1tu1B9sw06DAHOs7BrnQThs8ZmAudh4WbXqPkQkd/goFPwFICCuclO/PBpg7boGja9lkT2AsiA0uBnaBcrAnsDJFYIDEQXWmbXSE6dOaDK32gPpjksw9k2Ieer/mf8ILs6lSr+w+71PNr4Es/7SWH1JFY3b/IAjnRq1p/V9KRQFb3N8APau1f2vrX96YAAAAASUVORK5CYII=);
 }
-
-.check-input:checked:disabled + .check-box-img {
-  background-image: url(../img/svg-sedona/checkbox-on-disabled.svg);
-}
-
 
 .infrastructure-title,
 .housing-title {
@@ -873,7 +861,6 @@ a {
   list-style: none;
 }
 
-
 .sorting-choice-type,
 .sorting-choice-rating {
   color: #cacaca;
@@ -901,7 +888,7 @@ a {
 .sorting-choice-type:active,
 .sorting-choice-rating:active {
   color: #000000;
-  text-decoration: none;
+  border: 0;
 }
 
 .sorting-for-number {
@@ -919,6 +906,7 @@ a {
 .img-btn-down {
   color: #cacaca;
 }
+
 .img-btn-up {
   color: #81b3d2;
 }
@@ -927,7 +915,6 @@ a {
 .img-btn-up:hover {
   color: #231f20;
 }
-
 
 .img-btn-down:active,
 .img-btn-up:active {
