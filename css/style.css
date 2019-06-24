@@ -1055,10 +1055,6 @@ a {
   color: #ffffff;
 }
 
-.social-button:active {
-  color: #88b6d1;
-}
-
 .social-button:hover,
 .social-button:focus {
   background-color: #669ec0;
