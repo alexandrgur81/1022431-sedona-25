@@ -68,6 +68,7 @@ a {
   transform: translate(-50%, 0);
   padding: 0 72px;
   box-sizing: border-box;
+  z-index: 1;
 }
 
 .main-navigation {
@@ -97,6 +98,7 @@ a {
 .site-navigation {
  list-style: none;
  display: flex;
+ flex-wrap: wrap;
  align-items: center;
  min-height: 58px;
  margin: 0;
@@ -177,7 +179,7 @@ a {
   background-size: cover;
   position: absolute;
   z-index: 2;
-  bottom: -2px;
+  bottom: -3px;
   left: 0;
 }
 
@@ -469,6 +471,26 @@ a {
   padding: 56px 56px 55px;
   text-align: left;
   z-index: 1;
+  display: none;
+  animation-name: stretching;
+  animation-duration: 1s;
+  animation-direction: reverse;
+}
+
+@keyframes stretching {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(-400px);
+  }
+}
+
+.appointment-form-show {
+  display: flex;
 }
 
 .container-arrival {
