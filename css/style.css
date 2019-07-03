@@ -471,7 +471,15 @@ a {
   padding: 56px 56px 55px;
   text-align: left;
   z-index: 1;
-  display: none;
+}
+
+.hide-form {
+  width: 568px;
+  left: 50%;
+  margin-left: -284px;
+  position: absolute;
+  z-index: 1;
+  display: block;
   animation-name: stretching;
   animation-duration: 1s;
   animation-direction: reverse;
@@ -489,8 +497,8 @@ a {
   }
 }
 
-.appointment-form-show {
-  display: flex;
+.visual {
+  display: none;
 }
 
 .container-arrival {
@@ -776,6 +784,11 @@ a {
   background-color: #d1f093;
 }
 
+.map-img iframe {
+  width: 1200px;
+  height: 470px;
+  border: 0;
+}
 .base-choice {
   margin: 0;
   background-image: url("../img/filter-background.jpg");
